@@ -1,4 +1,4 @@
-# 🚀 Nombre de tu Proyecto (Ej: PruebasTecnicaAPI)
+# 🚀 PruebasTecnicaAPI
 
 
 > ¡Bienvenido a PruebasTecnicaAPI!.
