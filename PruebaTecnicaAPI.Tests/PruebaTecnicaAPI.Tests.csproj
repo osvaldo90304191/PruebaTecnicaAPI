@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    
+    <IsPackable>false</IsPackable>
+    <IsTestProject>true</IsTestProject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!--
+      Referencia al proyecto de la API. Esta ruta debería ser la correcta
+      para que el proyecto de pruebas pueda encontrar el proyecto principal.
+    -->
+    <ProjectReference Include="..\PruebaTecnicaAPI.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      Referencias a los paquetes de prueba.
+      Asegúrate de que los paquetes `xunit` y `Microsoft.NET.Test.Sdk`
+      estén instalados.
+    -->
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="9.0.7" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="xunit" Version="2.5.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.5.3" />
+    <PackageReference Include="coverlet.collector" Version="6.0.0" />
+    <PackageReference Include="Moq" Version="4.20.72" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.7" />
+  </ItemGroup>
+
+</Project>
